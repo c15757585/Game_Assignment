@@ -82,12 +82,12 @@ void draw() {
         for (int i = 0; i < _width; i ++)
       {
 
-        fill(130);
+        fill(10,90,150);
         rect(i*block, j*block, block, block);
         
         if (board [j][i] > 0) 
         {
-          fill(board[j][i] == 1?255:0, board[j][i] == 2?255:0, 0);
+          fill(board[j][i] == 1?, board[j][i] == 2?255:0, 0);
           
           ellipse(i * block, j * block, block, block);
         }
