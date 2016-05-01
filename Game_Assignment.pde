@@ -1,8 +1,9 @@
 int _width = 7;
 int _height = 6;
 int block = 100; 
-int player = 1;
-int stage;
+int player = 1; //two players
+int stage; //level variable for intro and game
+
 //If I had more knowledge I would highlight the winning combination before going to the game over screen.
 //Perhaps more animations like a dropping token or a mouseover before you click based off of mouseover.
 //array for board
@@ -20,7 +21,7 @@ void setup()
   }
 
 int getWinner() 
-  { //checking rows columns diagnoals for four in a row
+  { 
     for (int y = 0; y < _height; y++)
       for (int x = 0; x < _width; x++)
         if (token(y, x) != 0 && token(y, x) == token(y, x+1) && token(y, x) == token(y, x+2) && token(y, x) == token(y, x+3)) 
@@ -46,6 +47,7 @@ int getWinner()
   }
 
 int token( int y, int x) {
+   // shortcut for if structure
   return (y < 0|| x < 0 || y >= _height|| x >= _width)?0:board[y][x];
 }
 
