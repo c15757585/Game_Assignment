@@ -87,7 +87,8 @@ void draw() {
         
         if (board [j][i] > 0) 
         {
-          fill(board[j][i] == 1?, board[j][i] == 2?255:0, 0);
+          // shortcut for if structure
+          fill(board[j][i] == 1?255:0, board[j][i] == 2?255:0, 0);
           
           ellipse(i * block, j * block, block, block);
         }
