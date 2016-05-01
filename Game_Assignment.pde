@@ -3,7 +3,8 @@ int _height = 6;
 int block = 100; 
 int player = 1;
 int stage;
-
+//If I had more knowledge I would highlight the winning combination before going to the game over screen.
+//Perhaps more animations like a dropping token or a mouseover before you click based off of mouseover.
 //array for board
 int [][] board = new int [_height] [_width];
 
@@ -13,7 +14,7 @@ void setup()
     size(700, 600);
     stage = 1;
     background(0);
-    //Make sure it the ellipse draws correctly
+    //Make sure the ellipse draws correctly
     ellipseMode(CORNER);
     
   }
@@ -99,7 +100,8 @@ void draw() {
 else {
   background(0);
   fill(255);
-  text("The winner is Player "+getWinner()+" press space to restart!", width/3, height/2);
+  text("The winner is Player "+getWinner(), width/2, height/2 -50);
+  text(" press space to restart!", width/2, height/2);
   if (keyPressed && key == ' ')  
   {
     player=1; 
