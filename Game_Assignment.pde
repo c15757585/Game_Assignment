@@ -5,13 +5,13 @@ int player = 1; //two players
 int stage; //level variable for intro and game
 
 import ddf.minim.*;
-/*
+
 Minim minim;
 AudioSample sample;
 AudioSnippet snippet;
 
 PlayAudio audio;
-*/
+
 //If I had more knowledge I would highlight the winning combination before going to the game over screen.
 //Perhaps more animations like a dropping token or a mouseover before you click based off of mouseover.
 //array for board
@@ -26,10 +26,10 @@ void setup()
     //Make sure the ellipse draws correctly
     ellipseMode(CORNER);
     
- /*   //audio
+  //audio
   minim = new Minim(this);
   audio = new PlayAudio();
-  */
+
   }
 
 int getWinner() 
@@ -80,7 +80,7 @@ void mousePressed() {
 
 
 void draw() {
-  /*
+
    if (mousePressed)
   {
     audio.playSnippet();
