@@ -1,5 +1,7 @@
 # Game_Assignment
-A game created for a DT508 assignment for Bryan Duggan
+
+A game for a DT508 assignment for Bryan Duggan
+Created by Philip Elliott
 
 Genre: Board Game
 Name: Connect 4 from scratch
