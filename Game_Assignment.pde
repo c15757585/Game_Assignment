@@ -105,9 +105,10 @@ void draw() {
         for (int j = 0; j < _height; j++) 
         for (int i = 0; i < _width; i ++)
       {
-
+        //board creation
         fill(10,90,150);
         rect(i*block, j*block, block, block);
+        
          fill(0);
         ellipse(i*block, j*block, block, block);
         
@@ -119,7 +120,6 @@ void draw() {
           ellipse(i * block, j * block, block, block);
         }
       }
-    
 }
   
 else {
