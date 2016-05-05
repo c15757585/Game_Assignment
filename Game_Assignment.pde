@@ -34,6 +34,7 @@ void setup()
 
 int getWinner() 
   { 
+    
     for (int y = 0; y < _height; y++)
       for (int x = 0; x < _width; x++)
         if (token(y, x) != 0 && token(y, x) == token(y, x+1) && token(y, x) == token(y, x+2) && token(y, x) == token(y, x+3)) 
@@ -57,6 +58,7 @@ int getWinner()
           
     return -1; //tie
   }
+  
 
 int token( int y, int x) {
    // shortcut for if structure
@@ -106,6 +108,8 @@ void draw() {
 
         fill(10,90,150);
         rect(i*block, j*block, block, block);
+         fill(0);
+        ellipse(i*block, j*block, block, block);
         
         if (board [j][i] > 0) 
         {
